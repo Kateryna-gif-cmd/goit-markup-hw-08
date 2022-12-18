@@ -340,7 +340,6 @@ address {
   height: 100vh;
   z-index: 1;
   padding-top: 48px;
-  padding-bottom: 48px;
 }
 .mob-menu > .container {
   padding-left: 40px;
@@ -477,6 +476,7 @@ address {
   position: relative;
   margin-bottom: 48px;
   gap: 10px;
+  max-width: 358px;
 }
 
 .mob-soc__item:not(:last-child) {
@@ -1385,6 +1385,7 @@ address {
 }
 @media screen and (max-width: 768px) {
   .footer__input {
+    width: 400px;
     margin-bottom: 20px;
   }
 }
