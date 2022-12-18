@@ -412,6 +412,7 @@ address {
 }
 
 .mob-menu-liniya {
+  cursor: pointer;
   fill: currentColor;
 }
 
@@ -431,10 +432,12 @@ address {
   right: 10px;
   width: 30px;
   height: 30px;
-  border: 1px solid rgba(0, 0, 0, 0.1);
+  border: none;
   border-radius: 50%;
   background-color: #FFFFFF;
-  fill: #000000;
+}
+.modal-menu-close:hover, .modal-menu-close:focus {
+  fill: var(--accent-color);
 }
 
 .mob-current {
@@ -463,7 +466,7 @@ address {
   font-size: 34px;
   line-height: 1.1;
   letter-spacing: 0.02em;
-  color: var(--main-btn-color);
+  color: var(--accent-color);
 }
 
 .mob-soc {
