@@ -55,8 +55,6 @@ address {
   .container {
     width: 100vw;
     margin: 0;
-    margin-left: auto;
-    margin-right: auto;
   }
 }
 @media screen and (min-width: 480px) {
@@ -493,7 +491,6 @@ address {
 }
 
 .hero {
-  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -858,6 +855,7 @@ address {
   .card__item {
     -ms-flex-preferred-size: calc((100% - 0px) / 1);
         flex-basis: calc((100% - 0px) / 1);
+    margin-bottom: 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1530,10 +1528,9 @@ address {
 
 .modal-backdrop {
   position: fixed;
-  top: 0;
-  bottom: 0;
   left: 0;
-  right: 0;
+  width: 100%;
+  height: 100%;
   background-color: rgba(0, 0, 0, 0.8);
   -webkit-transition: opacity 500ms, visibility 500ms;
   transition: opacity 500ms, visibility 500ms;
@@ -1545,15 +1542,14 @@ address {
 }
 
 .modal {
-  max-height: 90vh;
-  width: calc(100% - 30px);
-  max-width: 1600px;
-  width: 100%;
-  height: 609px;
-  overflow: scroll;
   position: absolute;
   top: 50%;
   left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  max-width: 450px;
+  width: calc(100% - 30px);
+  overflow: scroll;
   -webkit-transform: translate(-50%, -50%) rotate(0);
           transform: translate(-50%, -50%) rotate(0);
   -webkit-transition: -webkit-transform 1000ms linear;
@@ -1568,20 +1564,6 @@ address {
 @media screen and (min-width: 1200px) {
   .modal {
     width: 528px;
-    height: 581px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%) rotate(0);
-            transform: translate(-50%, -50%) rotate(0);
-    -webkit-transition: -webkit-transform 1000ms linear;
-    transition: -webkit-transform 1000ms linear;
-    transition: transform 1000ms linear;
-    transition: transform 1000ms linear, -webkit-transform 1000ms linear;
-    background: #FFFFFF;
-    -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-            box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 4px;
   }
 }
 
