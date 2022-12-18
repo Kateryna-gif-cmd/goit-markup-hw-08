@@ -240,19 +240,52 @@
     }
     &__input {
       @media screen and (max-width: 768px) {
-    width: 450px;
         margin-bottom: 20px;
+    
+        width: 100%;
+        height: 50px;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+        border-radius: 4px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: calc(20/16);
+        letter-spacing: 0.03em;
+        color: #FFFFFF;
+        background-color: 
+        rgba(47, 48, 58, 1);
+        padding-left: 16px;
+        outline: none;  
+        &:hover,
+        &:focus {
+          border: 1px solid var(--accent-color);
+        }
       }
       @media screen and (min-width: 768px) {
        
-        width: 450px;
         margin-bottom: 20px;
+       
+      width: 450px;
+        height: 50px;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+        border-radius: 4px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: calc(20/16);
+        letter-spacing: 0.03em;
+        color: #FFFFFF;
+        background-color: 
+        rgba(47, 48, 58, 1);
+        padding-left: 16px;
+        outline: none;  
+        &:hover,
+        &:focus {
+          border: 1px solid var(--accent-color);
+        }
       }
       @media screen and (min-width: 1200px) {
-        width: 358px;
-        margin: 0 auto;
-      }
-      
+        margin: 0;
         width: 358px;
         height: 50px;
         border: 1px solid rgba(255, 255, 255, 0.3);
@@ -271,6 +304,8 @@
         &:focus {
           border: 1px solid var(--accent-color);
         }
+      }
+       
 }
     &__btn {
       @media screen and (max-width: 768px) {
@@ -300,7 +335,7 @@
       }
       &__form {
         width: 100%;
-        max-width: 358px;
+      
         @media screen and (max-width: 768px) {
         display: flex;
         flex-direction: column;
