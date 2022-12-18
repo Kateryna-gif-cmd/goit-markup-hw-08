@@ -27,7 +27,7 @@
     // width: 270px;
     @media screen and (max-width: 768px) {
  
-      
+      flex-basis: calc((100% - 30px) / 1);
     width: 450px;
     align-items: center;
     }
