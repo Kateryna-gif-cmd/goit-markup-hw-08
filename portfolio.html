@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebStudio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"/>
+      <link rel="stylesheet" href="./css/main.min.css"/>
+     
+</head>
+<body class="page-body">
+    <header class="header">
+        <div class="header__conteiner container">
+            <nav class="header__nav">
+                <a class="header__logo" href="./index.html">Web<span class="header__logo-part">Studio</span></a>
+                <ul class="header__list list">
+                    <li class="header__item "><a class="header__link link header__link--current" href="./index.html">Студія</a></li>
+                    <li class="header__item"><a class="header__link link" href="./portfolio.html">Портфоліо</a></li>
+                    <li class="header__item"><a class="header__link link" href="./index.html">Контакти</a></li>
+                </ul>
+            </nav>
+            <ul class="contacts list">
+                <li class="contacts__item">
+                    <a class="contacts__link-mail" href="mailto:info@devstudio.com"><svg class="contacts__icon-mail" width="16" height="16">
+                        <use href="./img/icons.svg#icon-envelope"></use></svg>info@devstudio.com</a>
+                </li>
+                <li>
+                    <a class="contacts__link-tel" href="tel:+380961111111"><svg class="contacts__icon-tel" width="10" height="16">
+                        <use href="./img/icons.svg#icon-smartphone-4"></use></svg>+38 096 111 11 11</a>
+                </li>
+            </ul>
+           <button class="menu-btn" type="button"><svg width="18" height="18">
+            <use href="./img/icons.svg#icon-menu_24px1"></use>
+            <use href="./img/icons.svg#icon-close_24px"></use></svg></button>
+        </div>
+    
+    </header>   
+    <main>
+        <!-- <section class="portfolio section" >
+            <div class="container">
+                <h1 class="visually-hidden">Портфоліо</h1>
+                    <ul class="portfolio__list list">
+                        <li class="portfolio__item"><button class="portfolio__button" type="button">Усі</button></li>
+                        <li class="portfolio__item"><button class="portfolio__button" type="button">Веб-сайти</button></li>
+                        <li class="portfolio__item"><button class="portfolio__button" type="button">Додатки</button></li>
+                        <li class="portfolio__item"><button class="portfolio__button" type="button">Дизайн</button></li>
+                        <li class="portfolio__item"><button class="portfolio__button" type="button">Маркетинг</button></li>
+                    </ul>
+        
+                    <ul class="galery-list list">
+                        <li class="galery-item list">
+                            <a class="galery-examples" href="">
+                            <div class="galery-card">
+                                <div class="galery-wrapper">
+                                    <img class="galery-photo" srcset="
+                                    ./img/galery/galery_img1_tab.jpg 354w,
+                                    ./img/galery/galery_img1_desk.jpg 370w,
+                                    ./img/galery/galery_img1_mob.jpg 450w,
+                                    ./img/galery/galery_img1_tab@2x.jpg 708w,
+                                    ./img/galery/galery_img1_desk@2x.jpg 740w,
+                                    ./img/galery/galery_img1_mob@2x.jpg 900w"
+            
+                                    sizes="(min-width: 1200px) 354px, (min-width: 768px) 370px, (min-width: 480px) 450px, 100vw"
+                                    src="../img/galery/galery_img1_desk.jpg" alt="Технокряк" loading="lazy">
+                            <div class="galery-description">
+                                Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                                 Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
+                            </div>
+                        </div>
+                            <div class="text">
+                            <h2 class="text__title">Технокряк</h2>
+                            <p class="text__subtitle">Веб-сайт</p>
+                        </div>
+                    </div>
+                        </a>
+                        </li>
+                        <li class="galery-item list">
+                            <a class="galery-examples" href="">
+                            <div class="galery-card">
+                                <div class="galery-wrapper">
+                                    <img class="galery-photo" srcset="
+                                    ./img/galery/galery_img2_tab.jpg 354w,
+                                    ./img/galery/galery_img2_desk.jpg 370w,
+                                    ./img/galery/galery_img2_mob.jpg 450w,
+                                    ./img/galery/galery_img2_tab@2x.jpg 708w,
+                                    ./img/galery/galery_img2_desk@2x.jpg 740w,
+                                    ./img/galery/galery_img2_mob@2x.jpg 900w"
+            
+                                    sizes="(min-width: 1200px) 354px, (min-width: 768px) 370px, (min-width: 480px) 450px, 100vw"
+                                    src="../img/galery/galery_img2_desk.jpg" alt="Технокряк" loading="lazy">
+                            <div class="galery-description">
+                                Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                                 Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
+
+                                </div>
+                            </div>
+                            <div class="text">
+                                <h2 class="text__title">Постер New Orlean vs Golden Star</h2>
+                                <p class="text__subtitle">Дизайн</p>
+                            </div>
+                        </div>
+                            </a>
+                            </li>
+                        <li class="galery-item list">
+                            <a class="galery-examples" href="">
+                            <div class="galery-card">
+                                <div class="galery-wrapper">
+                                    <img class="galery-photo" srcset="
+                                    ./img/galery/galery_img3_tab.jpg 354w,
+                                    ./img/galery/galery_img3_desk.jpg 370w,
+                                    ./img/galery/galery_img3_mob.jpg 450w,
+                                    ./img/galery/galery_img3_tab@2x.jpg 708w,
+                                    ./img/galery/galery_img3_desk@2x.jpg 740w,
+                                    ./img/galery/galery_img3_mob@2x.jpg 900w"
+            
+                                    sizes="(min-width: 1200px) 354px, (min-width: 768px) 370px, (min-width: 480px) 450px, 100vw"
+                                    src="../img/galery/galery_img3_desk.jpg" alt="Технокряк" loading="lazy">
+                            <div class="galery-description">
+                                Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                                 Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
+
+                            </div>
+                        </div>
+                            <div class="text">
+                                <h2 class="text__title">Ресторан Seafood</h2>
+                                <p class="text__subtitle">Додаток</p>
+                            </div>
+                        </div>
+                    </a>
+                        </li>
+                        <li class="galery-item list">
+                            <a class="galery-examples" href="">
+                            <div class="galery-card">
+                                <div class="galery-wrapper">
+                                    <img class="galery-photo" srcset="
+                                    ./img/galery/galery_img4_tab.jpg 354w,
+                                    ./img/galery/galery_img4_desk.jpg 370w,
+                                    ./img/galery/galery_img4_mob.jpg 450w,
+                                    ./img/galery/galery_img4_tab@2x.jpg 708w,
+                                    ./img/galery/galery_img4_desk@2x.jpg 740w,
+                                    ./img/galery/galery_img4_mob@2x.jpg 900w"
+            
+                                    sizes="(min-width: 1200px) 354px, (min-width: 768px) 370px, (min-width: 480px) 450px, 100vw"
+                                    src="../img/galery/galery_img4_desk.jpg" alt="Технокряк" loading="lazy">
+                            <div class="galery-description">
+                                Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                                 Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
+                                </div>
+                        </div>
+                            <div class="text">
+                            <h2 class="text__title">Проєкт Prime</h2>
+                            <p class="text__subtitle">Маркетинг</p>
+                            </div>
+                        </div>
+                    </a>
+                        </li>
+                        <li class="galery-item list">
+                            <a class="galery-examples" href="">
+                            <div class="galery-card">
+                                <div class="galery-wrapper">
+                                    <img class="galery-photo" srcset="
+                                    ./img/galery/galery_img5_tab.jpg 354w,
+                                    ./img/galery/galery_img5_desk.jpg 370w,
+                                    ./img/galery/galery_img5_mob.jpg 450w,
+                                    ./img/galery/galery_img5_tab@2x.jpg 708w,
+                                    ./img/galery/galery_img5_desk@2x.jpg 740w,
+                                    ./img/galery/galery_img5_mob@2x.jpg 900w"
+            
+                                    sizes="(min-width: 1200px) 354px, (min-width: 768px) 370px, (min-width: 480px) 450px, 100vw"
+                                    src="../img/galery/galery_img5_desk.jpg" alt="Технокряк" loading="lazy">
+                            <div class="galery-description">
+                                Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                                 Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
+                                </div>
+                        </div>
+                            <div class="text">
+                            <h2 class="text__title">Проєкт Boxes</h2>
+                            <p class="text__subtitle">Додаток</p>
+                        </div>
+                       </div>
+                    </a>
+                        </li>
+                        <li class="galery-item list">
+                            <a class="galery-examples" href="">
+                            <div class="galery-card">
+                                <div class="galery-wrapper">
+                                    <img class="galery-photo" srcset="
+                                    ./img/galery/galery_img6_tab.jpg 354w,
+                                    ./img/galery/galery_img6_desk.jpg 370w,
+                                    ./img/galery/galery_img6_mob.jpg 450w,
+                                    ./img/galery/galery_img6_tab@2x.jpg 708w,
+                                    ./img/galery/galery_img6_desk@2x.jpg 740w,
+                                    ./img/galery/galery_img6_mob@2x.jpg 900w"
+            
+                                    sizes="(min-width: 1200px) 354px, (min-width: 768px) 370px, (min-width: 480px) 450px, 100vw"
+                                    src="../img/galery/galery_img6_desk.jpg" alt="Технокряк" loading="lazy">
+                            <div class="galery-description">
+                                Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                                 Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
+                                </div>
+                        </div>
+                            <div class="text">
+                            <h2 class="text__title">Inspiration has no Borders</h2>
+                            <p class="text__subtitle">Веб-сайт</p>
+                            </div>
+                        </div>
+                    </a>
+                        </li>
+                        <li class="galery-item list">
+                            <a class="galery-examples" href="">
+                            <div class="galery-card">
+                                <div class="galery-wrapper">
+                                    <img class="galery-photo" srcset="
+                                    ./img/galery/galery_img7_tab.jpg 354w,
+                                    ./img/galery/galery_img7_desk.jpg 370w,
+                                    ./img/galery/galery_img7_mob.jpg 450w,
+                                    ./img/galery/galery_img7_tab@2x.jpg 708w,
+                                    ./img/galery/galery_img7_desk@2x.jpg 740w,
+                                    ./img/galery/galery_img7_mob@2x.jpg 900w"
+            
+                                    sizes="(min-width: 1200px) 354px, (min-width: 768px) 370px, (min-width: 480px) 450px, 100vw"
+                                    src="../img/galery/galery_img7_desk.jpg" alt="Технокряк" loading="lazy">
+                            <div class="galery-description">
+                                Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                                 Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
+                                </div>
+                        </div>
+                            <div class="text">
+                            <h2 class="text__title">Видання Limited Edition</h2>
+                            <p class="text__subtitle">Дизайн</p>
+                            </div>
+                        </div>
+                    </a>
+                    </li>
+                        <li class="galery-item list">
+                            <a class="galery-examples" href="">
+                            <div class="galery-card">
+                                <div class="galery-wrapper">
+                                    <img class="galery-photo" srcset="
+                                    ./img/galery/galery_img8_tab.jpg 354w,
+                                    ./img/galery/galery_img8_desk.jpg 370w,
+                                    ./img/galery/galery_img8_mob.jpg 450w,
+                                    ./img/galery/galery_img8_tab@2x.jpg 708w,
+                                    ./img/galery/galery_img8_desk@2x.jpg 740w,
+                                    ./img/galery/galery_img8_mob@2x.jpg 900w"
+            
+                                    sizes="(min-width: 1200px) 354px, (min-width: 768px) 370px, (min-width: 480px) 450px, 100vw"
+                                    src="../img/galery/galery_img8_desk.jpg" alt="Технокряк" loading="lazy">
+                            <div class="galery-description">
+                                Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                                Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
+                            </div>
+                        </div>
+                            <div class="text">
+                            <h2 class="text__title">Проєкт LAB</h2>
+                            <p class="text__subtitle">Маркетинг</p>
+                        </div>
+                    </div>
+                </a>
+                        </li>
+                        <li class="galery-item list">
+                            <a class="galery-examples" href="">
+                            <div class="galery-card">
+                                <div class="galery-wrapper">
+                                    <img class="galery-photo" srcset="
+                                    ./img/galery/galery_img9_tab.jpg 354w,
+                                    ./img/galery/galery_img9_desk.jpg 370w,
+                                    ./img/galery/galery_img9_mob.jpg 450w,
+                                    ./img/galery/galery_img9_tab@2x.jpg 708w,
+                                    ./img/galery/galery_img9_desk@2x.jpg 740w,
+                                    ./img/galery/galery_img9_mob@2x.jpg 900w"
+            
+                                    sizes="(min-width: 1200px) 354px, (min-width: 768px) 370px, (min-width: 480px) 450px, 100vw"
+                                    src="../img/galery/galery_img9_desk.jpg" alt="Технокряк" loading="lazy">
+                            <div class="galery-description">
+                                Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+                                Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
+                            </div>
+                        </div>
+                            <div class="text">
+                            <h2 class="text__title">Growing Business</h2>
+                            <p class="text__subtitle">Додаток</p>
+                            </div>
+                        </div>
+                    </a>
+                        </li>
+                    </ul> 
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__contacts">   
+            <a class="footer__logo" href="/">Web<span class="footer__logo-part">Studio</span></a>
+            <address class="footer__address">
+                <a class="footer__link" href="https://goo.gl/maps/e65cpARR4rWKHHQ89" target="_blank" rel="noopener noreferrer nofollow">
+                    м. Київ, пр-т Лесі Українки, 26</a>
+            </address> 
+            <ul class="footer__list list">
+            <li class="footer__item">
+                <a class="footer__link-mail" href="mailto:info@devstudio.com">info@devstudio.com</a>
+            </li>
+            <li class="footer__item">
+                <a class="footer__link-tel" href="tel:+380961111111">+38 096 111 11 11</a>
+            </li>
+            </ul>
+            </div>
+            <div class="footer__social">
+            <h2 class="footer__social-title">приєднуйтесь</h2>
+            <ul class="footer__icons list">
+            <li class="footer__item-social">
+                <a href="" class="footer__link-social link">
+             <svg class="footer__icon" width="20" height="20">
+                <use href="./img/icons.svg#icon-footer-instagram"></use>
+             </svg>
+                </a></li>
+            <li class="footer__item-social">
+                <a href="" class="footer__link-social link">
+                <svg class="footer__icon" width="20" height="20">
+                <use href="./img/icons.svg#icon-footer-twitter"></use>
+             </svg>
+                </a></li>
+                <li class="footer__item-social">
+                    <a href="" class="footer__link-social link">
+                 <svg class="footer__icon" width="20" height="20">
+                    <use href="./img/icons.svg#icon-footer-facebook"></use>
+                 </svg>
+                    </a></li>
+                    <li class="footer__item-social">
+                        <a href="" class="footer__link-social link">
+                     <svg class="footer__icon" width="20" height="20">
+                        <use href="./img/icons.svg#icon-footer-linkedin"></use>
+                     </svg>
+                        </a></li>
+        </ul>
+    </div>
+   <div class="footer__fedback">
+    <div class="footer__fedback-wrapper">
+        <p class="footer__text">Підпишіться на розсилку</p>
+        <form class="footer__form">
+          <label class="visually-hidden" for="Email"></label>
+          <input
+            class="footer__input"
+            type="email"
+            name="Email" required
+            id="Email"
+            placeholder="E-mail"
+          />
+          <button class="footer__btn" type="submit">Підписатися
+            <svg class="footer__form-icon" width="24" height="24">
+              <use href="./img/icons.svg#icon-icon-send"></use>
+            </svg>
+          </button>
+        </form>
+    </div>
+</div>
+</div>
+</footer> -->
+    
+</body>
+</html>

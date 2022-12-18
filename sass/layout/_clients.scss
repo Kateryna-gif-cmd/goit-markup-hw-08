@@ -1,0 +1,115 @@
+// .clients__title {
+//     margin-bottom: 50px;
+//   }
+  .clients {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    &__title {
+        font-size: 36px;
+        line-height: calc(42/36);
+        text-align: center;
+        letter-spacing: 0.03em;
+        color: var(--main-color);
+        margin-bottom: 50px;
+    
+  }
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+   
+    gap: 30px
+  }
+  &__item {
+@media screen and (max-width: 768px) {
+ 
+  flex-basis: calc((100% - 30px)/2);
+
+  
+}
+@media screen and (min-width: 768px) {
+ 
+  flex-basis: calc((100% - 60px)/3);
+
+  
+}
+@media screen and (min-width: 1200px) {
+ 
+  flex-basis: calc((100% - 150px)/6);
+
+  
+}
+  
+    height: 92px;
+    
+   
+  
+  }
+  &__link {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    color: #AFB1B8;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+    color: var(--accent-color);
+  border: 1px solid var(--accent-color)
+}
+  }
+  &__icon {
+    fill: currentColor;
+  }
+}
+//   .clients-list {
+//     display: flex;
+//     flex-wrap: wrap;
+//     justify-content: center;
+//   }
+//    .clients-list  {
+//     display: flex;
+//     justify-content: center;
+//     margin-top: 50px;
+    
+//   }
+//   .clients-item {
+//     width: 170px;
+//     height: 92px;
+    
+//     margin-right: 30px;
+  
+//   }
+//   .clients-list .clients-item:last-child {
+//     margin-right: 0;
+//   }
+
+//  .clients-link {
+//     width: 100%;
+//     height: 100%;
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     border: 1px solid #AFB1B8;
+//     border-radius: 4px;
+//     color: #AFB1B8;
+//     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+//   }
+
+// .clients-list .clients-icon {
+//   fill: currentColor;
+// }
+
+// .clients-link:hover {
+//   color: var(--accent-color);
+//   border: 1px solid var(--accent-color)
+// }
+
+// .clients-link:focus {
+//   color: var(--accent-color);
+//   border: 1px solid var(--accent-color);
+// }
+
