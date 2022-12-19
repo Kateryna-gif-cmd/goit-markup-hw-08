@@ -1692,8 +1692,9 @@ address {
 }
 
 .modal__title {
-  margin-left: 40px;
-  width: 370px;
+  margin: auto;
+  max-width: 370px;
+  width: 100%;
   font-weight: 700;
   font-size: 20px;
   line-height: 1.15;
@@ -1705,7 +1706,7 @@ address {
 }
 @media screen and (min-width: 1200px) {
   .modal__title {
-    width: 448px;
+    max-width: 448px;
   }
 }
 
