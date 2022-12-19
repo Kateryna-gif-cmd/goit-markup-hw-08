@@ -1,9 +1,21 @@
 // .clients__title {
 //     margin-bottom: 50px;
 //   }
-.clients {
-  padding-top: 94px;
-  padding-bottom: 94px;
+.clients { 
+  @media screen and (max-width: 780px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+
+  @media screen and (min-width: 780px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
   &__title {
       font-size: 36px;
       line-height: calc(42/36);
@@ -11,6 +23,9 @@
       letter-spacing: 0.03em;
       color: var(--main-color);
       margin-bottom: 50px;
+      @media screen and (min-width: 1200px) {
+   
+      }
   
 }
 &__list {

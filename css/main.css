@@ -201,18 +201,6 @@ address {
   padding-top: 32px;
   padding-bottom: 32px;
 }
-@media screen and (max-width: 768px) {
-  .header__link {
-    font-size: 12px;
-    line-height: 1.1666666667;
-  }
-}
-@media screen and (min-width: 768px) {
-  .header__link {
-    font-size: 12px;
-    line-height: 1.1666666667;
-  }
-}
 .header__link:hover, .header__link:focus {
   color: var(--accent-color);
 }
@@ -446,10 +434,6 @@ address {
   fill: var(--accent-color);
 }
 
-.mob-menu__button {
-  margin-top: 306px;
-}
-
 .mob-current {
   color: var(--accent-color);
   position: relative;
@@ -471,6 +455,7 @@ address {
   letter-spacing: 0.02em;
   color: #757575;
   margin-top: auto;
+  width: 100%;
 }
 
 .mob-menu-tel {
@@ -491,6 +476,9 @@ address {
   gap: 10px;
   width: 100%;
   margin-top: auto;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .mob-soc__item:not(:last-child) {
@@ -519,7 +507,6 @@ address {
   text-align: center;
   max-width: 1600px;
   width: 100%;
-  height: 400px;
   margin-right: auto;
   margin-left: auto;
   margin-top: 0;
@@ -626,7 +613,7 @@ address {
     padding-bottom: 118px;
   }
 }
-@media screen and (min-width: 200px) {
+@media screen and (min-width: 1200px) {
   .hero.section {
     padding-top: 200px;
     padding-bottom: 200px;
@@ -640,20 +627,17 @@ address {
 
 @media screen and (max-width: 768px) {
   .next {
-    padding-top: 60px;
     padding-bottom: 60px;
   }
 }
 @media screen and (min-width: 768px) {
   .next {
-    padding-top: 60px;
     padding-bottom: 60px;
   }
 }
 @media screen and (min-width: 1200px) {
   .next {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-bottom: 0;
   }
 }
 
@@ -748,8 +732,8 @@ address {
 }
 
 .work {
-  background-color: var(--body-color--);
   padding-bottom: 94px;
+  background-color: var(--body-color--);
 }
 @media screen and (max-width: 1200px) {
   .work {
@@ -808,10 +792,6 @@ address {
   transition: transform 500ms linear, -webkit-transform 500ms linear;
 }
 
-.work .section {
-  padding-top: 0;
-}
-
 .team {
   background: var(--section-color--);
   padding-bottom: 94px;
@@ -864,7 +844,7 @@ address {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 30px 10px 30px 10px;
+  padding: 10px 30px;
   text-align: center;
 }
 .card__member {
@@ -875,7 +855,6 @@ address {
 }
 .card__item {
   width: 100%;
-  margin-bottom: 30px;
   gap: 30px;
   background-color: #FFFFFF;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -943,6 +922,7 @@ address {
   margin-bottom: 10px;
 }
 .card__text {
+  font-weight: 400;
   font-size: 16px;
   line-height: 1.1875;
   letter-spacing: 0.03em;
@@ -957,6 +937,7 @@ address {
       -ms-flex-pack: center;
           justify-content: center;
   margin-top: 16px;
+  margin-bottom: 30px;
 }
 .social__item {
   width: 44px;
@@ -995,9 +976,23 @@ address {
   fill: currentColor;
 }
 
-.clients {
-  padding-top: 94px;
-  padding-bottom: 94px;
+@media screen and (max-width: 780px) {
+  .clients {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+@media screen and (min-width: 780px) {
+  .clients {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .clients {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 .clients__title {
   font-size: 36px;
@@ -1066,12 +1061,6 @@ address {
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: #2F303A;
-}
-@media screen and (min-width: 1200px) {
-  .footer {
-    padding-top: 94px;
-    padding-bottom: 94px;
-  }
 }
 @media screen and (max-width: 768px) {
   .footer__contacts {

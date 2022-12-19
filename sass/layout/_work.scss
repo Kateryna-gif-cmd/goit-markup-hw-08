@@ -1,10 +1,11 @@
 .work {
+    padding-bottom: 94px;
 @media screen and (max-width: 1200px) {
     display: none;
     
 }
     background-color: var(--body-color--);
-    padding-bottom: 94px;
+   
     &__title {
         font-size: 36px;
     line-height: calc(42/36);
@@ -46,7 +47,8 @@
     }
   }
   .work .section {
-      padding-top: 0;
+   
+     
       
   
     }
