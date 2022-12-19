@@ -1693,6 +1693,9 @@ address {
 
 .modal__title {
   margin: auto;
+  margin-top: auto;
+  margin-right: auto;
+  margin-left: auto;
   max-width: 370px;
   width: 100%;
   font-weight: 700;
