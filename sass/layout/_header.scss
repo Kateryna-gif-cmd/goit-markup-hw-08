@@ -297,14 +297,16 @@ margin-left: 93px;
     top: 0;
     left: 0;
     background-color: #ffffff;
-    width: 100vw;
-    height: 100vh;
+    max-width: 480px;
+    width: 100%;
+    height: 796px;
     z-index: 1;
     padding-top: 48px;
+    overflow: scroll;
    
     > .container {
       padding-left: 40px;
-      
+    
       height: 100%;
       display: flex;
       flex-direction: column;
@@ -318,7 +320,7 @@ margin-left: 93px;
       display: none;
     }
     
-  
+ 
     
     margin-left: auto;
     background-color: transparent;
@@ -339,6 +341,7 @@ margin-left: 93px;
   }
   
   .menu-close-btn {
+    
     margin-left: auto;
     border: none;
     background-color: transparent;
@@ -408,6 +411,7 @@ margin-left: 93px;
   .mob-menu-contact {
     margin-bottom: 64px;
     list-style: none;
+    width: 100%;
   }
   
   .mob-menu-mail {
@@ -431,8 +435,8 @@ margin-left: 93px;
     position: relative;
     margin-bottom: 48px;
     gap: 10px;
-
-    max-width: 358px;
+    width: 100%;
+   
  
  
   }
