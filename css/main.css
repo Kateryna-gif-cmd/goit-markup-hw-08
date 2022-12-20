@@ -130,7 +130,7 @@ address {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 768px) {
   .header .header__conteiner {
     -webkit-box-align: center;
         -ms-flex-align: center;
@@ -145,27 +145,25 @@ address {
   display: -ms-flexbox;
   display: flex;
 }
-.header__logo {
-  font-family: "Raleway";
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.1923076923;
-  letter-spacing: 0.03em;
-  text-decoration: none;
-  color: var(--accent-color);
-  padding-top: 24px;
-  padding-bottom: 25px;
-}
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) {
   .header__logo {
+    font-family: "Raleway";
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.1666666667;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+    color: var(--accent-color);
+    padding-top: 24px;
+    padding-bottom: 25px;
     font-size: 22px;
     line-height: 1.0909090909;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .header__logo {
-    font-size: 22px;
-    line-height: 1.0909090909;
+    font-size: 26px;
+    line-height: 1.1923076923;
   }
 }
 @media screen and (max-width: 768px) {
@@ -261,8 +259,8 @@ address {
   }
   .header .contacts__link-mail {
     font-weight: 500;
-    font-size: 14px;
-    line-height: 1.1428571429;
+    font-size: 12px;
+    line-height: 1.1666666667;
     letter-spacing: 0.02em;
     color: var(--second-color);
     text-decoration: none;
@@ -280,10 +278,18 @@ address {
   .header .contacts__link-mail:hover, .header .contacts__link-mail:focus {
     color: var(--accent-color);
   }
-  .header .contacts__link-tel {
-    font-weight: 500;
+}
+@media screen and (min-width: 768px) and (min-width: 1200px) {
+  .header .contacts__link-mail {
     font-size: 14px;
     line-height: 1.1428571429;
+  }
+}
+@media screen and (min-width: 768px) {
+  .header .contacts__link-tel {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.1666666667;
     letter-spacing: 0.02em;
     color: var(--second-color);
     text-decoration: none;
@@ -299,6 +305,12 @@ address {
   }
   .header .contacts__link-tel:hover, .header .contacts__link-tel:focus {
     color: var(--accent-color);
+  }
+}
+@media screen and (min-width: 768px) and (min-width: 1200px) {
+  .header .contacts__link-tel {
+    font-size: 14px;
+    line-height: 1.1428571429;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1573,6 +1585,9 @@ address {
         flex-wrap: wrap;
     -ms-flex-pack: distribute;
         justify-content: space-around;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
   }
 }
 @media screen and (min-width: 1200px) {

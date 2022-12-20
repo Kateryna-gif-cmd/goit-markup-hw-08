@@ -1,10 +1,10 @@
 .header {
- 
+  
 
   .header__conteiner {
     display: flex;
     justify-content: space-between;
-    @media screen and (min-width: 767px) {
+    @media screen and (min-width: 768px) {
       
      
       align-items: center;
@@ -21,24 +21,25 @@
     display: flex; 
     }
     &__logo {
-      @media screen and (max-width: 768px) {
-        font-size: 22px;
-        line-height: calc(24/22);
-      }
+ 
       @media screen and (min-width: 768px) {
-        font-size: 22px;
-        line-height: calc(24/22);
-      }
-      
         font-family: 'Raleway';
         font-weight: 700;
-        font-size: 26px;
-        line-height: calc(31/26);
+        font-size: 24px;
+        line-height: calc(28/24);
         letter-spacing: 0.03em; 
         text-decoration: none;
         color: var(--accent-color);
         padding-top: 24px;
         padding-bottom: 25px;   
+        font-size: 22px;
+        line-height: calc(24/22);
+      }
+      @media screen and (min-width: 1200px) {
+        font-size: 26px;
+        line-height: calc(31/26);
+      }
+       
     }
     &__list {
   @media screen and (max-width: 768px) {
@@ -171,8 +172,8 @@ margin-left: 93px;
       margin-left: 114px;
       &__link-mail {
         font-weight: 500;
-        font-size: 14px;
-        line-height: calc(16/14);
+        font-size: 12px;
+        line-height: calc(14/12);
         letter-spacing: 0.02em;
         color: var(--second-color);
         text-decoration: none;
@@ -188,12 +189,18 @@ margin-left: 93px;
         &:focus {
             color: var(--accent-color);  
         }
+        @media screen and (min-width: 1200px) {
+          font-size: 14px;
+          line-height: calc(16/14);
+        }
 
     }
     &__link-tel {
+ 
+      
         font-weight: 500;
-        font-size: 14px;
-        line-height: calc(16/14);
+        font-size: 12px;
+        line-height: calc(14/12);
         letter-spacing: 0.02em;
         color: var(--second-color);
         text-decoration: none;
@@ -207,6 +214,10 @@ margin-left: 93px;
         &:focus {
             color: var(--accent-color);  
 
+        }
+        @media screen and (min-width: 1200px) {
+          font-size: 14px;
+          line-height: calc(16/14);
         }
     }
     }
