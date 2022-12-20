@@ -1,6 +1,5 @@
 .footer {
-padding-bottom: 60px;
-padding-top: 60px;
+
 
     background-color: #2F303A;
     &__contacts {
@@ -388,6 +387,7 @@ padding-top: 60px;
     display: flex;
     flex-wrap: nowrap;
     align-items: baseline;
+    padding-bottom: 60px;
     }
   }
 
