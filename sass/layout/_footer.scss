@@ -4,7 +4,7 @@
 
     background-color: #2F303A;
     &__contacts {
-      @media screen and (max-width: 768px) {
+      @media screen and (max-width: 767px) {
         display:flex;
         flex-direction: column;
         align-items: center;
@@ -40,7 +40,7 @@
       }
       &__address {
         margin-top: 20px;
-        @media screen and (max-width: 768px) {
+        @media screen and (max-width: 767px) {
           margin-bottom: 12px;
         }
         @media screen and (min-width: 768px) {
@@ -51,7 +51,7 @@
         
       }
       &__item {
-        @media screen and (max-width: 768px) {
+        @media screen and (max-width: 767px) {
           display:flex;
           flex-direction: column;
           align-items: center;
@@ -93,7 +93,7 @@
         justify-content: center;
       }
       &__link-mail {
-        @media screen and (max-width: 768px) {
+        @media screen and (max-width: 767px) {
           margin-bottom: 12px;
         }
         @media screen and (min-width: 768px) {
@@ -131,7 +131,7 @@
         }
       }
       &__social {
-        @media screen and (max-width: 768px) {
+        @media screen and (max-width: 767px) {
           display: flex;
           flex-direction: column;
            align-items: center;
@@ -200,8 +200,8 @@
 
     }
     &__fedback-wrapper {
-      @media screen and (max-width: 768px) {
-      margin-top: 60px;
+      @media screen and (max-width: 767px) {
+      // margin-top: 60px;
       }
       @media screen and (min-width: 768px) {
         display: flex;
@@ -216,7 +216,7 @@
       }
     }
     &__text {
-      @media screen and (max-width: 768px) {
+      @media screen and (max-width: 767px) {
       
         justify-content: space-around;
       }
@@ -238,7 +238,7 @@
         margin-bottom: 20px; 
     }
     &__input {
-      @media screen and (max-width: 768px) {
+      @media screen and (max-width: 767px) {
         margin-bottom: 20px;
     
         width: 100%;
@@ -307,7 +307,7 @@
        
 }
     &__btn {
-      @media screen and (max-width: 768px) {
+      @media screen and (max-width: 767px) {
         margin: 0 auto;
       }
       
@@ -335,7 +335,7 @@
       &__form {
         width: 100%;
       
-        @media screen and (max-width: 768px) {
+        @media screen and (max-width: 767px) {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -370,7 +370,7 @@
     flex-wrap: wrap;
     justify-content: center;
     flex-direction: row;
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 767px) {
       display: flex;
       flex-direction: column;
       justify-content: center;
