@@ -1084,6 +1084,8 @@ address {
 }
 
 .footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
   background-color: #2F303A;
 }
 @media screen and (max-width: 767px) {
@@ -1607,7 +1609,6 @@ address {
     -webkit-box-align: baseline;
         -ms-flex-align: baseline;
             align-items: baseline;
-    padding-bottom: 60px;
   }
 }
 
