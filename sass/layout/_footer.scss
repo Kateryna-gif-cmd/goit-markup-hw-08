@@ -39,25 +39,28 @@
         color: #FFFFFF;
       }
       &__address {
-        margin-top: 20px;
+        margin-top: 28px;
         @media screen and (max-width: 767px) {
-          margin-bottom: 12px;
+          // margin-bottom: 12px;
         }
         @media screen and (min-width: 768px) {
-          margin-bottom: 12px;
+          // margin-bottom: 12px;
         }
-        margin-top: 20px;
+        margin-top: 28px;
    
         
       }
       &__item {
-        margin-bottom: 12px;
+        margin-top: 12px;
+        margin-bottom: 0;
         @media screen and (max-width: 767px) {
           display:flex;
           flex-direction: column;
           align-items: center;
         }
-        
+       
+      
+        //   margin-bottom: 0;
         // @media screen and (min-width: 768px) {
         //   margin-bottom: 12px;
         // }
@@ -101,17 +104,17 @@
         justify-content: center;
       }
       &__link-mail {
-        @media screen and (max-width: 767px) {
-          margin-bottom: 12px;
-        }
-        @media screen and (min-width: 768px) {
-          margin-bottom: 12px;
-        }
+        // @media screen and (max-width: 767px) {
+        //   margin-bottom: 12px;
+        // }
+        // @media screen and (min-width: 768px) {
+        //   margin-bottom: 12px;
+        // }
 
-        @media screen and (min-width: 1200px) {
-          margin-bottom: 12px;
-        }
-        margin-bottom: 12px;
+        // @media screen and (min-width: 1200px) {
+        //   margin-bottom: 12px;
+        // }
+        
         font-style: normal;
         font-size: 14px;
         line-height: calc(24/14);
@@ -127,7 +130,8 @@
         }
       }
       &__link-tel {
-        @media screen and (min-width: 1200px) {
+       
+        
       
         font-style: normal;
         font-size: 14px;
@@ -144,9 +148,7 @@
             color: var(--accent-color);
             text-decoration: none; 
         }
-        @media screen and (min-width: 1200px) {
-         
-        }
+     
       }
       &__social {
         @media screen and (max-width: 767px) {
