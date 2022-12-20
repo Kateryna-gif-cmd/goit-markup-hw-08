@@ -61,10 +61,15 @@
           margin-bottom: 12px;
         }
       }
+      @media screen and (min-width: 1200px) {
+      margin-bottom: 0;
+      }
       &__link {
         @media screen and (max-width: 767px) {
           margin-bottom: 12px;
         }
+      
+
         
         font-style: normal;
         font-size: 14px;

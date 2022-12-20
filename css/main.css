@@ -1177,6 +1177,11 @@ address {
     margin-bottom: 12px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .footer {
+    margin-bottom: 0;
+  }
+}
 .footer__link {
   font-style: normal;
   font-size: 14px;
